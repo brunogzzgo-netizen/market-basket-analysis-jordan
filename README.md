@@ -217,7 +217,7 @@ Before running Apriori, a correlation matrix was computed on the binary basket m
 ```python
 corr_top = basket_df[top_products].corr()
 sns.heatmap(corr_top, cmap="coolwarm", center=0, annot=False)
-<img src="images/heatmap_correlation.png" width="700">
+<Images src="images/heatmap_correlation.png" width="700">
 ```
 
 The heatmap confirmed several product clusters with positive correlation — most notably the rebar/wire group and the cement/sand/aggregate group — giving confidence that the Apriori algorithm would find meaningful patterns.
