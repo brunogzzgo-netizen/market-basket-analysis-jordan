@@ -1,0 +1,11 @@
+jordan:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: jordan.duckdb
+      extensions:
+        - parquet
+        - httpfs
+        - name: bigquery
+          repo: community

@@ -1,0 +1,141 @@
+[0m21:34:33.714495 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E933E59160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E934FD3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E934FD3B10>]}
+
+
+============================== 21:34:33.720911 | 3a86662b-1bf0-4994-96b0-0ec6eeee453b ==============================
+[0m21:34:33.720911 [info ] [MainThread]: Running with dbt=1.11.5
+[0m21:34:33.721850 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\brugz\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt init jordan', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m21:34:33.749976 [debug] [MainThread]: Starter project path: C:\Users\brugz\Downloads\Cod_clase\venv\Lib\site-packages\dbt\include\starter_project
+[0m21:34:33.850266 [info ] [MainThread]: 
+Your new dbt project "jordan" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:34:33.852714 [info ] [MainThread]: Setting up your profile.
+[0m21:53:26.728505 [error] [MainThread]: Encountered an error:
+
+[0m21:53:26.737779 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\brugz\Downloads\Cod_clase\venv\Lib\site-packages\dbt\cli\requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\brugz\Downloads\Cod_clase\venv\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\brugz\Downloads\Cod_clase\venv\Lib\site-packages\dbt\cli\main.py", line 483, in init
+    results = task.run()
+  File "C:\Users\brugz\Downloads\Cod_clase\venv\Lib\site-packages\dbt\task\init.py", line 346, in run
+    self.setup_profile(profile_name)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\brugz\Downloads\Cod_clase\venv\Lib\site-packages\dbt\task\init.py", line 262, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brugz\Downloads\Cod_clase\venv\Lib\site-packages\dbt\task\init.py", line 179, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\brugz\Downloads\Cod_clase\venv\Lib\site-packages\dbt\task\init.py", line 163, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "C:\Users\brugz\Downloads\Cod_clase\venv\Lib\site-packages\dbt\task\init.py", line 129, in generate_target_from_input
+    target[key] = click.prompt(
+                  ~~~~~~~~~~~~^
+        text, default=default, hide_input=hide_input, type=type
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\brugz\Downloads\Cod_clase\venv\Lib\site-packages\click\termui.py", line 171, in prompt
+    value = prompt_func(prompt)
+  File "C:\Users\brugz\Downloads\Cod_clase\venv\Lib\site-packages\click\termui.py", line 154, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m21:53:26.740211 [debug] [MainThread]: Command `dbt init` failed at 21:53:26.739944 after 1133.21 seconds
+[0m21:53:26.740866 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9455CA190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9455BE8D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9455E49E0>]}
+[0m21:53:26.741758 [debug] [MainThread]: Flushing usage events
+[0m21:53:27.968366 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:53:45.496878 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267D3C59160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267D4DCFED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267D4DCFB10>]}
+
+
+============================== 21:53:45.503601 | 9019079d-386c-4441-8ab7-d5ef2fe846d8 ==============================
+[0m21:53:45.503601 [info ] [MainThread]: Running with dbt=1.11.5
+[0m21:53:45.504458 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\brugz\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt init jordan', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m21:53:45.538489 [info ] [MainThread]: A project called jordan already exists here.
+[0m21:53:45.545700 [debug] [MainThread]: Command `dbt init` succeeded at 21:53:45.544969 after 0.25 seconds
+[0m21:53:45.547140 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267D4DCA9E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267D5E56570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267D4C23570>]}
+[0m21:53:45.548121 [debug] [MainThread]: Flushing usage events
+[0m21:53:46.418143 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:55:25.060294 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B117349160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1184BFED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1184BFB10>]}
+
+
+============================== 21:55:25.066010 | 1c840f2e-0cd9-4574-87b3-d3943b0d9c6c ==============================
+[0m21:55:25.066010 [info ] [MainThread]: Running with dbt=1.11.5
+[0m21:55:25.067252 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\brugz\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt init jordan', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m21:55:25.097766 [debug] [MainThread]: Starter project path: C:\Users\brugz\Downloads\Cod_clase\venv\Lib\site-packages\dbt\include\starter_project
+[0m21:55:25.152975 [info ] [MainThread]: 
+Your new dbt project "jordan" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:55:25.154199 [info ] [MainThread]: Setting up your profile.
+[0m22:07:26.938326 [info ] [MainThread]: Profile jordan written to C:\Users\brugz\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m22:07:26.941459 [debug] [MainThread]: Command `dbt init` succeeded at 22:07:26.941125 after 722.05 seconds
+[0m22:07:26.942458 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B128AC9E00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B128AAEC30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B128AD48D0>]}
+[0m22:07:26.943057 [debug] [MainThread]: Flushing usage events
+[0m22:07:28.028413 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:07:47.058973 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA7B0F9160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA7C273ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA7C273B10>]}
+
+
+============================== 22:07:47.064457 | 224010cd-03a1-462c-95ca-79894fff6a72 ==============================
+[0m22:07:47.064457 [info ] [MainThread]: Running with dbt=1.11.5
+[0m22:07:47.065382 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\brugz\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m22:07:47.116237 [info ] [MainThread]: dbt version: 1.11.5
+[0m22:07:47.119692 [info ] [MainThread]: python version: 3.13.7
+[0m22:07:47.120634 [info ] [MainThread]: python path: C:\Users\brugz\Downloads\Cod_clase\venv\Scripts\python.exe
+[0m22:07:47.121379 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m22:07:55.841186 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.duckdb'
+[0m22:07:55.842324 [info ] [MainThread]: Using profiles dir at C:\Users\brugz\.dbt
+[0m22:07:55.842854 [info ] [MainThread]: Using profiles.yml file at C:\Users\brugz\.dbt\profiles.yml
+[0m22:07:55.843390 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\brugz\Downloads\Cod_clase\dbt_project.yml
+[0m22:07:55.843946 [info ] [MainThread]: Configuration:
+[0m22:07:55.844407 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m22:07:55.844870 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m22:07:55.845329 [info ] [MainThread]: Required dependencies:
+[0m22:07:55.845827 [debug] [MainThread]: Executing "git --help"
+[0m22:07:55.850783 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m22:07:55.851397 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m22:07:55.852524 [info ] [MainThread]: [31m3 checks failed:[0m
+[0m22:07:55.853207 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "mi_proyecto_jordan", target "dev" invalid: Runtime Error
+    Could not find adapter type duckdb!
+
+
+[0m22:07:55.853920 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\brugz\Downloads\Cod_clase\dbt_project.yml> not found
+
+[0m22:07:55.854430 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH and that the user has permissions to run it: "git"
+
+[0m22:07:55.855859 [debug] [MainThread]: Command `dbt debug` failed at 22:07:55.855694 after 9.01 seconds
+[0m22:07:55.856615 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA0C93C2B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA0C91E570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA0C8BCC00>]}
+[0m22:07:55.857327 [debug] [MainThread]: Flushing usage events
+[0m22:07:56.582667 [debug] [MainThread]: An error was encountered while trying to flush usage events

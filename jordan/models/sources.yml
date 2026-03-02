@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: fuente_bq
+    description: Tablas en BigQuery adjuntadas como base bq en on-run-start
+    database: bq
+    schema: pg_rds_public
+    tables:
+      - name: customer
+      - name: sale

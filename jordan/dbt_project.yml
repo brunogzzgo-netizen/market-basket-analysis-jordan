@@ -1,0 +1,25 @@
+name: 'jordan'
+version: '1.0.0'
+
+profile: 'jordan'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+on-run-start:
+  - "INSTALL bigquery FROM community;"
+  - "LOAD bigquery;"
+  - "ATTACH 'project=materialesjordan' AS bq (TYPE bigquery, READ_ONLY);"
+
+models:
+  jordan:
+    +enabled: true
+    +materialized: table
