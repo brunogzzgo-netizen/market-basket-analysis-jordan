@@ -217,9 +217,9 @@ Before running Apriori, a correlation matrix was computed on the binary basket m
 ```python
 corr_top = basket_df[top_products].corr()
 sns.heatmap(corr_top, cmap="coolwarm", center=0, annot=False)
-<Images src="images/heatmap_correlation.png" width="700">
-```
 
+```
+<img src="Images/heatmap_correlation.png" width="700">
 The heatmap confirmed several product clusters with positive correlation — most notably the rebar/wire group and the cement/sand/aggregate group — giving confidence that the Apriori algorithm would find meaningful patterns.
 
 ---
@@ -232,9 +232,9 @@ profit  = df.groupby("sale_date")["unit_gross_profit"].sum().reset_index()
 
 plt.plot(revenue["sale_date"], revenue["product_price"], label="Revenue")
 plt.plot(profit["sale_date"],  profit["unit_gross_profit"], label="Profit")
-<img src="images/profit_comparision_plot.png" width="700">
-```
 
+```
+<img src="Images/profit_comparison_plot.png" width="700">
 This chart reveals a critical business context: **profit is consistently a small fraction of revenue**. The gap between the two lines is large and persistent. This directly motivates the cross-selling strategy — when margins are structurally thin, increasing basket size is more impactful than optimizing individual product pricing.
 
 ---
@@ -249,9 +249,9 @@ plot_data = top_products_to_plot.melt(
     value_vars=["total_profit", "future_profit"]
 )
 sns.barplot(x="product_name", y="Profit Amount", hue="Profit Type", data=plot_data)
-<img src="images/top_products_bat.png" width="700">
-```
 
+```
+<img src="Images/top_products_bar.png" width="700">
 | Product | Current Profit | Incremental Profit | Future Profit |
 |---|---|---|---|
 | CEMENTO GRIS MONTERREY | $120,348 | $162,043 | $282,391 |
