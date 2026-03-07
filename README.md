@@ -252,10 +252,6 @@ sns.barplot(x="product_name", y="Profit Amount", hue="Profit Type", data=plot_da
 
 ```
 <img src="Images/top_products_bar.png" width="700">
-| Product | Current Profit | Incremental Profit | Future Profit |
-|---|---|---|---|
-| CEMENTO GRIS MONTERREY | $120,348 | $162,043 | $282,391 |
-| CARGO POR ENTREGA 200 ZONA 1 | $180,156 | $51,095 | $231,251 |
 
 Two products show significant upside. The rest show no incremental profit — meaning they are standalone drivers not meaningfully affected by association-based strategies. This distinction is what makes the recommendation actionable: focus the bundling strategy on cement and delivery, not the entire catalog.
 
