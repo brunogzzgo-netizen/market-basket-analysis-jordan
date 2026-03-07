@@ -61,7 +61,7 @@ Google Colab — Python analysis
 
 ### Setup
 
-The project used **dbt-core with DuckDB as the local adapter**. BigQuery was attached as a read-only source directly via DuckDB's BigQuery community extension, eliminating the need to export CSVs manually.
+The project used "dbt-core with DuckDB as the local adapter". BigQuery was attached as a read-only source directly via DuckDB's BigQuery community extension, eliminating the need to export CSVs manually.
 
 ```yaml
 # dbt_project.yml
